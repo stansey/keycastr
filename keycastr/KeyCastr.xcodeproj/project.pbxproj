@@ -46,6 +46,10 @@
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		AE73C2B31B694E4900709ED6 /* XylE5.aif in Resources */ = {isa = PBXBuildFile; fileRef = AE73C2AF1B694E4900709ED6 /* XylE5.aif */; };
+		AE73C2B41B694E4900709ED6 /* XylC5.aif in Resources */ = {isa = PBXBuildFile; fileRef = AE73C2B01B694E4900709ED6 /* XylC5.aif */; };
+		AE73C2B51B694E4900709ED6 /* XylG5.aif in Resources */ = {isa = PBXBuildFile; fileRef = AE73C2B11B694E4900709ED6 /* XylG5.aif */; };
+		AE73C2B61B694E4900709ED6 /* XylA5.aif in Resources */ = {isa = PBXBuildFile; fileRef = AE73C2B21B694E4900709ED6 /* XylA5.aif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -164,6 +168,10 @@
 		3DF8835C0F5254F9005FD1C6 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* KeyCastr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyCastr.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE73C2AF1B694E4900709ED6 /* XylE5.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = XylE5.aif; sourceTree = "<group>"; };
+		AE73C2B01B694E4900709ED6 /* XylC5.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = XylC5.aif; sourceTree = "<group>"; };
+		AE73C2B11B694E4900709ED6 /* XylG5.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = XylG5.aif; sourceTree = "<group>"; };
+		AE73C2B21B694E4900709ED6 /* XylA5.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = XylA5.aif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -247,6 +255,10 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				AE73C2AF1B694E4900709ED6 /* XylE5.aif */,
+				AE73C2B01B694E4900709ED6 /* XylC5.aif */,
+				AE73C2B11B694E4900709ED6 /* XylG5.aif */,
+				AE73C2B21B694E4900709ED6 /* XylA5.aif */,
 				3D16404E0F3BCC6900CA65AD /* KeyCastrStatusItemActive.png */,
 				3D16404F0F3BCC6900CA65AD /* KeyCastrStatusItemInactive.png */,
 				3D3F548D0F30F3C7001C7272 /* UpdateIcon.tif */,
@@ -484,15 +496,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE73C2B51B694E4900709ED6 /* XylG5.aif in Resources */,
 				8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */,
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				3D3F52A70F30BF1E001C7272 /* KeyCastr.icns in Resources */,
 				3D3F548A0F30F37E001C7272 /* GeneralIcon.tif in Resources */,
 				3D3F548B0F30F37E001C7272 /* DisplayIcon.tif in Resources */,
 				3D3F548E0F30F3C7001C7272 /* UpdateIcon.tif in Resources */,
+				AE73C2B31B694E4900709ED6 /* XylE5.aif in Resources */,
 				3D1640500F3BCC6900CA65AD /* KeyCastrStatusItemActive.png in Resources */,
 				3D1640510F3BCC6900CA65AD /* KeyCastrStatusItemInactive.png in Resources */,
+				AE73C2B61B694E4900709ED6 /* XylA5.aif in Resources */,
 				3D1640600F3BCEC900CA65AD /* KeyCastrInactive.icns in Resources */,
+				AE73C2B41B694E4900709ED6 /* XylC5.aif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -170,22 +170,39 @@ CGEventRef eventTapCallback(
 
 -(void) _noteFlagsChanged:(CGEventRef)event
 {
-	uint32_t modifiers = 0;
-	CGEventFlags f = CGEventGetFlags( event );
-
-	if (f & kCGEventFlagMaskShift)
-		modifiers |= NSShiftKeyMask;
-	
-	if (f & kCGEventFlagMaskCommand)
-		modifiers |= NSCommandKeyMask;
-
-	if (f & kCGEventFlagMaskControl)
-		modifiers |= NSControlKeyMask;
-	
-	if (f & kCGEventFlagMaskAlternate)
-		modifiers |= NSAlternateKeyMask;
-
-	[self noteFlagsChanged:modifiers];
+    uint32_t modifiers = 0;
+    CGEventFlags f = CGEventGetFlags( event );
+    
+    if (f & kCGEventFlagMaskShift) {
+        modifiers |= NSShiftKeyMask;
+        NSSound *sound = [[NSSound alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"XylC5" ofType:@"aif"] byReference:NO];
+        [sound play];
+        [sound release];
+    }
+    
+    if (f & kCGEventFlagMaskCommand) {
+        modifiers |= NSCommandKeyMask;
+        NSSound *sound = [[NSSound alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"XylA5" ofType:@"aif"] byReference:NO];
+        [sound play];
+        [sound release];
+    }
+    
+    if (f & kCGEventFlagMaskControl) {
+        modifiers |= NSControlKeyMask;
+        NSSound *sound = [[NSSound alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"XylE5" ofType:@"aif"] byReference:NO];
+        [sound play];
+        [sound release];
+    }
+    
+    
+    if (f & kCGEventFlagMaskAlternate) {
+        modifiers |= NSAlternateKeyMask;
+        NSSound *sound = [[NSSound alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"XylG5" ofType:@"aif"] byReference:NO];
+        [sound play];
+        [sound release];
+    }
+    
+    [self noteFlagsChanged:modifiers];
 }
 
 -(void) _noteKeyEvent:(CGEventRef)event
